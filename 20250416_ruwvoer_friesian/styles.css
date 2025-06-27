@@ -1,0 +1,40 @@
+table {
+  display: block;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100%;
+  overflow: auto;
+  width: auto;
+}
+
+  th {
+    background-color: rgb(112, 196, 105);
+    color: white;
+    font-weight: normal;
+    padding: 20px 30px;
+    text-align: center;
+  }
+  td {
+    background-color: rgb(238, 238, 238);
+    color: rgb(111, 111, 111);
+    padding: 20px 30px;
+  }
+  
+  .rf {
+  text-align: right;
+  font-size: 75%;
+  }
+  
+  .pdf {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+
+  .pdf,
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+  }
+
