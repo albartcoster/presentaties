@@ -3,9 +3,11 @@ title: "Onafhankelijk denken over veevoeding"
 author: "Albart Coster,[albart@dairyconsult.nl](albart@dairyconsult.nl)"
 date: "2025-04-01"
 output: slidy_presentation
+output_dir: "presentaties"
 bibliography: bib.json
-csl: "biomed-central.csl"
-css: styles.css
+csl: "stijlen/biomed-central.csl"
+css: stijlen/styles.css
+
 ---
 
 \newcommand{\CO}{\mathrm{CO}_2}
@@ -30,8 +32,10 @@ installed_packages <- packages %in% rownames(installed.packages())
 if (any(installed_packages == FALSE))
   install.packages(packages[!installed_packages])
 invisible(lapply(packages, library, character.only = TRUE))
-load("20250402.Rdata")
-
+ipad <- "beelden"
+dpad <- "data_en_code"
+spad <- "stijlen"
+load(file.path(dpad,"20250402.Rdata"))
 ```
 
 # Opzet
